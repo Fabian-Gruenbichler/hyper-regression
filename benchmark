@@ -1,0 +1,202 @@
+Benchmark #1: cargo run --release --bin h2client 16
+  Time (mean ± σ):      4.207 s ±  0.011 s    [User: 2.628 s, System: 4.354 s]
+  Range (min … max):    4.199 s …  4.214 s    2 runs
+ 
+Benchmark #2: cargo run --release --bin baseline-h2client 16
+  Time (mean ± σ):      4.205 s ±  0.022 s    [User: 2.529 s, System: 4.642 s]
+  Range (min … max):    4.190 s …  4.221 s    2 runs
+ 
+Benchmark #3: cargo run --release --bin h2client 32
+  Time (mean ± σ):      2.978 s ±  0.021 s    [User: 1.335 s, System: 2.868 s]
+  Range (min … max):    2.963 s …  2.994 s    2 runs
+ 
+Benchmark #4: cargo run --release --bin baseline-h2client 32
+  Time (mean ± σ):      2.967 s ±  0.003 s    [User: 1.464 s, System: 2.868 s]
+  Range (min … max):    2.965 s …  2.970 s    2 runs
+ 
+Benchmark #5: cargo run --release --bin h2client 64
+  Time (mean ± σ):      2.822 s ±  0.009 s    [User: 1.073 s, System: 2.410 s]
+  Range (min … max):    2.815 s …  2.828 s    2 runs
+ 
+Benchmark #6: cargo run --release --bin baseline-h2client 64
+  Time (mean ± σ):      2.806 s ±  0.025 s    [User: 1.295 s, System: 2.388 s]
+  Range (min … max):    2.788 s …  2.824 s    2 runs
+ 
+Benchmark #7: cargo run --release --bin h2client 128
+  Time (mean ± σ):      2.538 s ±  0.001 s    [User: 859.7 ms, System: 1937.7 ms]
+  Range (min … max):    2.537 s …  2.538 s    2 runs
+ 
+Benchmark #8: cargo run --release --bin baseline-h2client 128
+  Time (mean ± σ):      2.505 s ±  0.025 s    [User: 938.4 ms, System: 2070.1 ms]
+  Range (min … max):    2.487 s …  2.523 s    2 runs
+ 
+Benchmark #9: cargo run --release --bin h2client 256
+  Time (mean ± σ):      2.414 s ±  0.003 s    [User: 620.6 ms, System: 1873.3 ms]
+  Range (min … max):    2.412 s …  2.416 s    2 runs
+ 
+Benchmark #10: cargo run --release --bin baseline-h2client 256
+  Time (mean ± σ):      2.392 s ±  0.010 s    [User: 780.4 ms, System: 1959.3 ms]
+  Range (min … max):    2.385 s …  2.399 s    2 runs
+ 
+Benchmark #11: cargo run --release --bin h2client 512
+  Time (mean ± σ):      2.388 s ±  0.020 s    [User: 627.7 ms, System: 1742.4 ms]
+  Range (min … max):    2.374 s …  2.402 s    2 runs
+ 
+Benchmark #12: cargo run --release --bin baseline-h2client 512
+  Time (mean ± σ):      2.382 s ±  0.005 s    [User: 708.0 ms, System: 1874.6 ms]
+  Range (min … max):    2.378 s …  2.385 s    2 runs
+ 
+Benchmark #13: cargo run --release --bin h2client 1024
+  Time (mean ± σ):      2.416 s ±  0.005 s    [User: 695.2 ms, System: 1669.8 ms]
+  Range (min … max):    2.413 s …  2.420 s    2 runs
+ 
+Benchmark #14: cargo run --release --bin baseline-h2client 1024
+  Time (mean ± σ):      2.393 s ±  0.008 s    [User: 721.3 ms, System: 1785.9 ms]
+  Range (min … max):    2.387 s …  2.398 s    2 runs
+ 
+Benchmark #15: cargo run --release --bin h2client 2048
+  Time (mean ± σ):      2.370 s ±  0.002 s    [User: 546.6 ms, System: 1772.4 ms]
+  Range (min … max):    2.369 s …  2.372 s    2 runs
+ 
+Benchmark #16: cargo run --release --bin baseline-h2client 2048
+  Time (mean ± σ):      2.340 s ±  0.015 s    [User: 688.3 ms, System: 1809.8 ms]
+  Range (min … max):    2.330 s …  2.351 s    2 runs
+ 
+Benchmark #17: cargo run --release --bin h2client 4096
+  Time (mean ± σ):      2.375 s ±  0.007 s    [User: 559.1 ms, System: 1752.1 ms]
+  Range (min … max):    2.370 s …  2.381 s    2 runs
+ 
+Benchmark #18: cargo run --release --bin baseline-h2client 4096
+  Time (mean ± σ):      2.330 s ±  0.002 s    [User: 661.4 ms, System: 1821.9 ms]
+  Range (min … max):    2.329 s …  2.331 s    2 runs
+ 
+Benchmark #19: cargo run --release --bin h2client 8192
+  Time (mean ± σ):      2.354 s ±  0.008 s    [User: 606.9 ms, System: 1713.9 ms]
+  Range (min … max):    2.349 s …  2.359 s    2 runs
+ 
+Benchmark #20: cargo run --release --bin baseline-h2client 8192
+  Time (mean ± σ):      2.347 s ±  0.010 s    [User: 664.3 ms, System: 1827.0 ms]
+  Range (min … max):    2.340 s …  2.354 s    2 runs
+ 
+Summary
+  'cargo run --release --bin baseline-h2client 4096' ran
+    1.00 ± 0.01 times faster than 'cargo run --release --bin baseline-h2client 2048'
+    1.01 ± 0.00 times faster than 'cargo run --release --bin baseline-h2client 8192'
+    1.01 ± 0.00 times faster than 'cargo run --release --bin h2client 8192'
+    1.02 ± 0.00 times faster than 'cargo run --release --bin h2client 2048'
+    1.02 ± 0.00 times faster than 'cargo run --release --bin h2client 4096'
+    1.02 ± 0.00 times faster than 'cargo run --release --bin baseline-h2client 512'
+    1.02 ± 0.01 times faster than 'cargo run --release --bin h2client 512'
+    1.03 ± 0.00 times faster than 'cargo run --release --bin baseline-h2client 256'
+    1.03 ± 0.00 times faster than 'cargo run --release --bin baseline-h2client 1024'
+    1.04 ± 0.00 times faster than 'cargo run --release --bin h2client 256'
+    1.04 ± 0.00 times faster than 'cargo run --release --bin h2client 1024'
+    1.08 ± 0.01 times faster than 'cargo run --release --bin baseline-h2client 128'
+    1.09 ± 0.00 times faster than 'cargo run --release --bin h2client 128'
+    1.20 ± 0.01 times faster than 'cargo run --release --bin baseline-h2client 64'
+    1.21 ± 0.00 times faster than 'cargo run --release --bin h2client 64'
+    1.27 ± 0.00 times faster than 'cargo run --release --bin baseline-h2client 32'
+    1.28 ± 0.01 times faster than 'cargo run --release --bin h2client 32'
+    1.81 ± 0.01 times faster than 'cargo run --release --bin baseline-h2client 16'
+    1.81 ± 0.00 times faster than 'cargo run --release --bin h2client 16'
+Benchmark #1: cargo run --release --bin h2s-client 16
+  Time (mean ± σ):      8.500 s ±  0.020 s    [User: 5.593 s, System: 7.045 s]
+  Range (min … max):    8.486 s …  8.514 s    2 runs
+ 
+Benchmark #2: cargo run --release --bin baseline-h2s-client 16
+  Time (mean ± σ):      8.513 s ±  0.013 s    [User: 5.685 s, System: 7.267 s]
+  Range (min … max):    8.504 s …  8.522 s    2 runs
+ 
+Benchmark #3: cargo run --release --bin h2s-client 32
+  Time (mean ± σ):      7.786 s ±  0.027 s    [User: 5.898 s, System: 4.561 s]
+  Range (min … max):    7.767 s …  7.805 s    2 runs
+ 
+Benchmark #4: cargo run --release --bin baseline-h2s-client 32
+  Time (mean ± σ):      7.824 s ±  0.042 s    [User: 6.304 s, System: 5.102 s]
+  Range (min … max):    7.795 s …  7.854 s    2 runs
+ 
+Benchmark #5: cargo run --release --bin h2s-client 64
+  Time (mean ± σ):      6.983 s ±  0.003 s    [User: 5.392 s, System: 3.586 s]
+  Range (min … max):    6.981 s …  6.985 s    2 runs
+ 
+Benchmark #6: cargo run --release --bin baseline-h2s-client 64
+  Time (mean ± σ):      7.034 s ±  0.003 s    [User: 5.649 s, System: 4.171 s]
+  Range (min … max):    7.032 s …  7.035 s    2 runs
+ 
+Benchmark #7: cargo run --release --bin h2s-client 128
+  Time (mean ± σ):      6.604 s ±  0.016 s    [User: 5.002 s, System: 3.200 s]
+  Range (min … max):    6.592 s …  6.615 s    2 runs
+ 
+Benchmark #8: cargo run --release --bin baseline-h2s-client 128
+  Time (mean ± σ):      6.657 s ±  0.006 s    [User: 5.083 s, System: 3.957 s]
+  Range (min … max):    6.653 s …  6.661 s    2 runs
+ 
+Benchmark #9: cargo run --release --bin h2s-client 256
+  Time (mean ± σ):      7.375 s ±  0.018 s    [User: 6.010 s, System: 2.815 s]
+  Range (min … max):    7.363 s …  7.388 s    2 runs
+ 
+Benchmark #10: cargo run --release --bin baseline-h2s-client 256
+  Time (mean ± σ):      6.486 s ±  0.020 s    [User: 5.060 s, System: 3.624 s]
+  Range (min … max):    6.471 s …  6.500 s    2 runs
+ 
+Benchmark #11: cargo run --release --bin h2s-client 512
+  Time (mean ± σ):      9.647 s ±  0.025 s    [User: 8.222 s, System: 2.744 s]
+  Range (min … max):    9.629 s …  9.665 s    2 runs
+ 
+Benchmark #12: cargo run --release --bin baseline-h2s-client 512
+  Time (mean ± σ):      6.422 s ±  0.019 s    [User: 4.991 s, System: 3.520 s]
+  Range (min … max):    6.408 s …  6.435 s    2 runs
+ 
+Benchmark #13: cargo run --release --bin h2s-client 1024
+  Time (mean ± σ):     14.626 s ±  0.023 s    [User: 13.448 s, System: 2.608 s]
+  Range (min … max):   14.609 s … 14.642 s    2 runs
+ 
+Benchmark #14: cargo run --release --bin baseline-h2s-client 1024
+  Time (mean ± σ):      6.391 s ±  0.054 s    [User: 4.857 s, System: 3.564 s]
+  Range (min … max):    6.352 s …  6.429 s    2 runs
+ 
+Benchmark #15: cargo run --release --bin h2s-client 2048
+  Time (mean ± σ):     24.066 s ±  0.030 s    [User: 23.205 s, System: 2.184 s]
+  Range (min … max):   24.044 s … 24.087 s    2 runs
+ 
+Benchmark #16: cargo run --release --bin baseline-h2s-client 2048
+  Time (mean ± σ):      6.471 s ±  0.009 s    [User: 4.907 s, System: 3.579 s]
+  Range (min … max):    6.464 s …  6.477 s    2 runs
+ 
+Benchmark #17: cargo run --release --bin h2s-client 4096
+  Time (mean ± σ):     43.277 s ±  0.029 s    [User: 42.394 s, System: 2.150 s]
+  Range (min … max):   43.256 s … 43.297 s    2 runs
+ 
+Benchmark #18: cargo run --release --bin baseline-h2s-client 4096
+  Time (mean ± σ):      6.389 s ±  0.016 s    [User: 5.052 s, System: 3.401 s]
+  Range (min … max):    6.378 s …  6.400 s    2 runs
+ 
+Benchmark #19: cargo run --release --bin h2s-client 8192
+  Time (mean ± σ):     43.130 s ±  0.001 s    [User: 42.300 s, System: 2.161 s]
+  Range (min … max):   43.129 s … 43.131 s    2 runs
+ 
+Benchmark #20: cargo run --release --bin baseline-h2s-client 8192
+  Time (mean ± σ):      6.376 s ±  0.009 s    [User: 5.066 s, System: 3.352 s]
+  Range (min … max):    6.370 s …  6.383 s    2 runs
+ 
+Summary
+  'cargo run --release --bin baseline-h2s-client 8192' ran
+    1.00 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 4096'
+    1.00 ± 0.01 times faster than 'cargo run --release --bin baseline-h2s-client 1024'
+    1.01 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 512'
+    1.01 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 2048'
+    1.02 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 256'
+    1.04 ± 0.00 times faster than 'cargo run --release --bin h2s-client 128'
+    1.04 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 128'
+    1.10 ± 0.00 times faster than 'cargo run --release --bin h2s-client 64'
+    1.10 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 64'
+    1.16 ± 0.00 times faster than 'cargo run --release --bin h2s-client 256'
+    1.22 ± 0.00 times faster than 'cargo run --release --bin h2s-client 32'
+    1.23 ± 0.01 times faster than 'cargo run --release --bin baseline-h2s-client 32'
+    1.33 ± 0.00 times faster than 'cargo run --release --bin h2s-client 16'
+    1.34 ± 0.00 times faster than 'cargo run --release --bin baseline-h2s-client 16'
+    1.51 ± 0.00 times faster than 'cargo run --release --bin h2s-client 512'
+    2.29 ± 0.00 times faster than 'cargo run --release --bin h2s-client 1024'
+    3.77 ± 0.01 times faster than 'cargo run --release --bin h2s-client 2048'
+    6.76 ± 0.01 times faster than 'cargo run --release --bin h2s-client 8192'
+    6.79 ± 0.01 times faster than 'cargo run --release --bin h2s-client 4096'

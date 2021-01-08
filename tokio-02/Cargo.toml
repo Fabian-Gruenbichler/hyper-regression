@@ -1,0 +1,18 @@
+[package]
+name = "tokio-02"
+version = "0.1.0"
+authors = ["Fabian Grünbichler <f.gruenbichler@proxmox.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0"
+bytes = "0.5"
+futures = "0.3"
+h2 = { version = "0.2", features = [ "stream" ] }
+http = "0.2"
+hyper = { version = "0.13" }
+openssl = "0.10"
+tokio = { version = "0.2.9", features = [ "blocking", "fs", "dns", "io-util", "macros", "process", "rt-threaded", "signal", "stream", "tcp", "time", "uds" ] }
+tokio-openssl = "0.4.0"
