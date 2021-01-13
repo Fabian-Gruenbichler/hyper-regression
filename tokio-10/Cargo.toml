@@ -15,4 +15,4 @@ http = "0.2"
 hyper = { version = "0.14", features = [ "full" ] }
 openssl = "0.10"
 tokio = { version = "1.0", features = [ "fs", "io-util", "macros", "net", "parking_lot", "process", "rt", "rt-multi-thread", "signal", "time" ] }
-tokio-openssl = "0.6.0"
+tokio-openssl = "=0.6.0"
